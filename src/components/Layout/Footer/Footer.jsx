@@ -21,8 +21,8 @@ export const Footer = () => {
 
     return (
         pathname !== "/"
-            ? <footer className={`${isAboutPage  ? "w-full" : "w-full md:w-9/12"} bg-black py-20 relative z-50 overflow-hidden ms-auto`}>
-                <div className="w-11/12 md:w-9/12 mx-auto space-y-28 relative z-10">
+            ? <footer className={`${isAboutPage  ? "w-full" : "w-full md:w-9/12"} bg-black py-20 overflow-hidden ms-auto`}>
+                <div className="w-11/12 md:w-9/12 mx-auto space-y-28 ">
                     <div className="flex items-center justify-between">
                         <Link to="/">
                             <img className='w-52' src={ImgSlider4} alt="logo" />
