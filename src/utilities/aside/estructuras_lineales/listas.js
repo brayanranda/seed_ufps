@@ -7,7 +7,7 @@ export const constLista = [
     },
     {
         key: "ope",
-        title: "Operaciones",
+        title: "Operaciones (simulador)",
         state: false,
         children: false,
     },
