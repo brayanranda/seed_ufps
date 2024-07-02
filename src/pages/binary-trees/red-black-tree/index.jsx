@@ -4,6 +4,8 @@ import Section from "@/components/ui/Section";
 import RedBlackTreeDownloads from './RedBlackTreeDownloads';
 import { constRedBlackTree } from '@/utilities/aside/arboles_binarios/redBlackTree';
 import Template from '@/components/Layout/Template';
+import Analisis from "@/components/ui/Analisis";
+import { getAnalisis_ARN } from "@/store/services/servicios";
 
 export default function RedBlackTree () {
     const [redBlackTree, setRedBlackTree] = useState(constRedBlackTree);
@@ -31,7 +33,14 @@ export default function RedBlackTree () {
                 url="/markdown/red-black-tree/eliminar.md"
             />
         </>,
-        impl: <Section url="/markdown/red-black-tree/implementation.md" first={true} last={true}/>,
+        impl: <Section url="/markdown/red-black-tree/implementation.md" first={true}/>,
+        cosCom: <Analisis
+            id={0}
+            servicio_markdown={getAnalisis_ARN}
+            title="Árbol Rojo y Negro en SEED"
+            sub_title="Costo Operacional y Complejidad de"
+            last={true}
+        />,
     }
 
     return(
