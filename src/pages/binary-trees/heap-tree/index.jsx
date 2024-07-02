@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import Section from "@/components/ui/Section";
 import HeapTreeDownloads from "./HeapTreeDownloads";
 import Template from "@/components/Layout/Template";
+import Analisis from "@/components/ui/Analisis";
+import { getAnalisis_AHEAP } from "@/store/services/servicios";
 
 export default function HeapTree () {
     const [splayTree, setSplayTree] = useState(constHeapTree);
@@ -30,7 +32,14 @@ export default function HeapTree () {
                 url="/markdown/heap-tree/eliminar.md"
             />
         </>,
-        impl: <Section url="/markdown/heap-tree/implementation.md" first={true} last={true}/>,
+        impl: <Section url="/markdown/heap-tree/implementation.md" first={true}/>,
+        cosCom: <Analisis
+            id={0}
+            servicio_markdown={getAnalisis_AHEAP}
+            title="Árbol Heap en SEED"
+            sub_title="Costo Operacional y Complejidad de"
+            last={true}
+        />,
     }
 
     return(

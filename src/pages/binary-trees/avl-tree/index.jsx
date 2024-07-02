@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import AvlTreeDownloads from "./AvlTreeDownloads";
 import { constAvlTree } from "@/utilities/aside/arboles_binarios/avlTree";
 import Template from "@/components/Layout/Template";
+import Analisis from "@/components/ui/Analisis";
+import { getAnalisis_AVL } from "@/store/services/servicios";
 
 export default function AVLTree () {
     const [asideAvlTree, setAsideAvlTree] = useState(constAvlTree);
@@ -30,7 +32,14 @@ export default function AVLTree () {
                 url="/markdown/avl-tree/eliminar.md"
                 first={true}
             />,
-        impl: <Section url="/markdown/avl-tree/implementation.md" first={true} last={true}/>,
+        impl: <Section url="/markdown/avl-tree/implementation.md" first={true}/>,
+        cosCom: <Analisis
+            id={0}
+            servicio_markdown={getAnalisis_AVL}
+            title="Árbol AVL en SEED"
+            sub_title="Costo Operacional y Complejidad de"
+            last={true}
+        />,
     }
     
     return(

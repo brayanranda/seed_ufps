@@ -89,13 +89,35 @@ export const getAnalisis_AE = async () => {
     return await (await fetch(SEED.ARBOLES_ENEARIOS.ARBOL_ENEARIO)).text();
 }
 
+//Obtiene el analisis de los arboles 123
+export const getAnalisis_A123 = async () => {
+    return await (await fetch(SEED.ARBOLES_ENEARIOS.ARBOL_123)).text();
+}
+
+//Obtiene el analisis de los arboles b
+export const getAnalisis_A_B = async () => {
+    return await (await fetch(SEED.ARBOLES_ENEARIOS.ARBOL_B)).text();
+}
+
+//Obtiene el analisis de los arboles mas
+export const getAnalisis_ABMAS = async () => {
+    return await (await fetch(SEED.ARBOLES_ENEARIOS.ARBOL_BMAS)).text();
+}
+
+/*----------------------------------------------------- Arboles Enearios ------------------------------------------------------------------- */
+
+
+
+/*----------------------------------------------------- Grafos ------------------------------------------------------------------- */
+
 //Obtiene el analisis de los digrafos
 export const getAnalisis_DIGRAFO = async () => {
-    return await (await fetch(SEED.ARBOLES_ENEARIOS.DIGRAFO)).text();
+    return await (await fetch(SEED.GRAFOS.DIGRAFO)).text();
 }
 
 //Obtiene el analisis de los grafos (dirigido y no dirigido)
 export const getAnalisis_G_D_ND = async () => {
-    return await (await fetch(SEED.ARBOLES_ENEARIOS.GRAFO_D_ND)).text();
+    return await (await fetch(SEED.GRAFOS.GRAFO_D_ND)).text();
 }
-/*----------------------------------------------------- Arboles Enearios ------------------------------------------------------------------- */
+
+/*----------------------------------------------------- Grafos ------------------------------------------------------------------- */

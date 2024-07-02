@@ -11,18 +11,22 @@ const SEED = {
         HASH: "/analisis/ESTRUCTURAS_LINEALES/hash.md"
     },
     ARBOLES_BINARIOS: {
-        ARBOL_BINARIO: "",
-        ARBOL_BINARIO_BUSQUEDA: "",
-        ARBOL_AVL: "",
-        ARBOL_ROJO_NEGRO: "",
-        ARBOL_SPLAY: "", 
-        ARBOL_HEAP: ""
+        ARBOL_BINARIO: "/analisis/ARBOLES/arboles_binarios.md",
+        ARBOL_BINARIO_BUSQUEDA: "/analisis/ARBOLES/arbol_binario_busqueda.md",
+        ARBOL_AVL: "/analisis/ARBOLES/arbol_avl.md",
+        ARBOL_ROJO_NEGRO: "/analisis/ARBOLES/arboles_rojo_negro.md",
+        ARBOL_SPLAY: "/analisis/ARBOLES/arbol_splay.md", 
+        ARBOL_HEAP: "/analisis/ARBOLES/arbol_heap.md"
     },
     ARBOLES_ENEARIOS: {
-        ARBOL_ENEARIO: "",
-        DIGRAFO: "",
-        GRAFO_D_ND: "",
-        ARBOL_BMAS: ""
+        ARBOL_ENEARIO: "/analisis/ARBOLES/arboles_enearios.md",
+        ARBOL_123: "/analisis/ARBOLES/arbol_123.md",
+        ARBOL_B: "/analisis/ARBOLES/arboles_b.md",
+        ARBOL_BMAS: "/analisis/ARBOLES/arboles_bmas.md"
+    },
+    GRAFOS: {
+        DIGRAFO: "/analisis/ARBOLES/",
+        GRAFO_D_ND: "/analisis/ARBOLES/",
     }
 }
 

@@ -3,7 +3,8 @@ import BinarySearchTreeDownloads from "./BinarySearchTreeDownloads";
 import { useEffect, useState } from "react";
 import { constBinarySearchTree } from "@/utilities/aside/arboles_binarios/binarySearchTree";
 import Template from "@/components/Layout/Template";
-
+import Analisis from "@/components/ui/Analisis";
+import { getAnalisis_ABB } from "@/store/services/servicios";
 
 export default function BinarySearchTree () {
     const [asideBinarySearchTree, setAsideBinarySearchTree] = useState(constBinarySearchTree);
@@ -32,7 +33,14 @@ export default function BinarySearchTree () {
                 url="/markdown/binary-search-tree/eliminar.md"
             />
         </>,
-        impl: <Section url="/markdown/binary-search-tree/implementation.md" first={true} last={true}/>,
+        impl: <Section url="/markdown/binary-search-tree/implementation.md" first={true}/>,
+        cosCom: <Analisis
+            id={0}
+            servicio_markdown={getAnalisis_ABB}
+            title="Árbol Binario de Busqueda en SEED"
+            sub_title="Costo Operacional y Complejidad de"
+            last={true}
+        />,
     }
     
     return(

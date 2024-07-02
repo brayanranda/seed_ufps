@@ -3,6 +3,8 @@ import Section from "@/components/ui/Section";
 import NaryDownloads from './NaryDownloads';
 import { consEnearioTree } from '@/utilities/aside/arboles_enearios/arbol_eneario';
 import Template from '@/components/Layout/Template';
+import Analisis from "@/components/ui/Analisis";
+import { getAnalisis_AE } from "@/store/services/servicios";
 
 export default function NAryTree () {
     const [naryTree, setNaryTree] = useState(consEnearioTree);
@@ -36,7 +38,14 @@ export default function NAryTree () {
                 url="/markdown/n-ary-tree/recorrido_postOrden.md"
             />
         </>,
-        impl: <Section url="/markdown/n-ary-tree/implementation.md" first={true} last={true}/>,
+        impl: <Section url="/markdown/n-ary-tree/implementation.md" first={true}/>,
+        cosCom: <Analisis
+            id={0}
+            servicio_markdown={getAnalisis_AE}
+            title="Árbol Eneario en SEED"
+            sub_title="Costo Operacional y Complejidad de"
+            last={true}
+        />,
     }
 
     return(
