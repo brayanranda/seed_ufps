@@ -38,5 +38,10 @@ export const items  = [
         items: [
             { name: 'Grafos', href: '/graphic-schema-theory/graph' },
         ]
+    },
+    {
+        name: "Recursión",
+        url: "recursion",
+        items: []
     }
 ]
