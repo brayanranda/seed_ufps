@@ -68,5 +68,15 @@ export const consGrafos = [
         key: "impl",
         title: "Implementación",
         state: false,
-    }
+    },
+    {
+        key: "cosCom_1",
+        title: "Costo & Complejidad Grafo_ND",
+        state: false,
+    },
+    {
+        key: "cosCom_2",
+        title: "Costo & Complejidad Digrafo",
+        state: false,
+    },
 ]
