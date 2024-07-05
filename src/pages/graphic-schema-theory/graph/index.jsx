@@ -3,6 +3,8 @@ import Section from "@/components/ui/Section";
 import { consGrafos } from "@/utilities/aside/grafos";
 import GraphDownloads from "./GraphDownloads";
 import Template from '@/components/Layout/Template';
+import Analisis from "@/components/ui/Analisis";
+import { getAnalisis_DIGRAFO, getAnalisis_G_D_ND } from "@/store/services/servicios";
 
 export default function Graph () {
     const [grafos, setGrafos] = useState(consGrafos);
@@ -26,7 +28,20 @@ export default function Graph () {
         grafPon: <Section url="/markdown/graph/grafosPonderados.md" first={true} />,
         algDij: <Section url="/markdown/graph/algoritmoDijkstra.md" first={true} />,
         alg: <Section url="/markdown/graph/algoritmos.md" first={true} />,
-        impl: <Section url="/markdown/graph/implementation.md" first={true} last={true} />,
+        impl: <Section url="/markdown/graph/implementation.md" first={true} />,
+        cosCom_1: <Analisis
+            id={0}
+            servicio_markdown={getAnalisis_G_D_ND}
+            title="Grafo_ND en SEED"
+            sub_title="Costo Operacional y Complejidad de"
+        />,
+        cosCom_2: <Analisis
+            id={1}
+            servicio_markdown={getAnalisis_DIGRAFO}
+            title="Digrafo en SEED"
+            sub_title="Costo Operacional y Complejidad de"
+            last={true}
+        />,
     }
 
     return(

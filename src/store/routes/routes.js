@@ -25,8 +25,8 @@ const SEED = {
         ARBOL_BMAS: "/analisis/ARBOLES/arboles_bmas.md"
     },
     GRAFOS: {
-        DIGRAFO: "/analisis/ARBOLES/",
-        GRAFO_D_ND: "/analisis/ARBOLES/",
+        DIGRAFO: "/analisis/GRAFOS/digrafo.md",
+        GRAFO_D_ND: "/analisis/GRAFOS/grafo_nd.md",
     }
 }
 

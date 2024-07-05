@@ -14,4 +14,9 @@ export const consArbolB = [
         title: "Implementación",
         state: false,
     },
+    {
+        key: "cosCom",
+        title: "Costo & Complejidad",
+        state: false,
+    },
 ]

@@ -46,7 +46,7 @@ function Aside({ data, setData, setViewTypeComponent }) {
     return (
         <div className="w-full md:w-3/12 z-10 h-screen fixed top-0 left-0 bg-gradient-to-t from-black to-transparent">
             <ul className={`px-6 p-40 text-white flex flex-col font-bold fixed w-3/12`}>
-                <div className={`space-y-2 ${data.length > 14 ? "overflow-y-scroll h-[750px] custom-scrollbar" : ""}`}>
+                <div className={`space-y-2 ${data.length > 14 ? "overflow-y-scroll h-[600px] custom-scrollbar" : ""}`}>
                     {
                         data && data.length > 0 &&
                             data.map((item, index) => {

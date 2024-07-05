@@ -3,6 +3,8 @@ import { consArbolB } from "@/utilities/aside/arboles_enearios/arbol_b";
 import React, { useState, useEffect } from 'react';
 import BTreeDownloads from "./BTreeDownloads";
 import Template from "@/components/Layout/Template";
+import Analisis from "@/components/ui/Analisis";
+import { getAnalisis_A_B } from "@/store/services/servicios";
 
 export default function BTree () {
     const [bTree, setBTree] = useState(consArbolB);
@@ -23,7 +25,14 @@ export default function BTree () {
                 url="/markdown/b-tree/operaciones.md"
                 first={true}
             />,
-        impl: <Section url="/markdown/b-tree/implementation.md" first={true} last={true}/>,
+        impl: <Section url="/markdown/b-tree/implementation.md" first={true}/>,
+        cosCom: <Analisis
+            id={0}
+            servicio_markdown={getAnalisis_A_B}
+            title="Árbol B en SEED"
+            sub_title="Costo Operacional y Complejidad de"
+            last={true}
+        />,
     }
 
     return(
